@@ -102,16 +102,9 @@ class TSAttributedLabel: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override var backgroundColor: UIColor? {
-        willSet {
-            guard let _ = newValue else {
-                return
-            }
-            backgroundColor = UIColor.whiteColor()
-        }
-    }
-    
     func commonInit() {
+        backgroundColor = UIColor.whiteColor()
+        
         attributeSting = NSMutableAttributedString()
         
         textFrame = nil
