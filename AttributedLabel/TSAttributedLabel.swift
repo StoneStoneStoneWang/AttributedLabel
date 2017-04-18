@@ -678,7 +678,7 @@ extension TSAttributedLabel {
                             CGContextDrawImage(context, rect, (content as! UIImage).CGImage)
                         } else if content is UIView {
                             let view = content as? UIView
-                            if let _ = view?.superview {
+                            if view?.superview == nil {
                                 addSubview(view!)
                             }
                             let viewFrame = CGRect(x: attachmentRect.origin.x , y: bounds.size.height - attachmentRect.origin.y - attachmentRect.size.height, width: attachmentRect.size.width , height:  attachmentRect.size.height)
