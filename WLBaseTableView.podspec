@@ -3,8 +3,8 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLBaseTableView"
-s.version      = "1.0.0"
-s.summary      = "A Lib For transition."
+s.version      = "1.0.1"
+s.summary      = "A Lib For tableview ."
 s.description  = <<-DESC
 A Lib For tableView.
 DESC
@@ -24,6 +24,8 @@ s.source = { :git => "https://github.com/StoneStoneStoneWang/WLBaseTableView.git
 s.source_files = "Code/**/*.{swift}"
 
 s.dependency 'TSToolKit_Swift'
+
+s.dependency 'MJRefresh'
 
 end
 
