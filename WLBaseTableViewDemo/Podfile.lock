@@ -1,0 +1,28 @@
+PODS:
+  - MJRefresh (3.1.15.7)
+  - TSToolKit_Swift (1.1.1)
+
+DEPENDENCIES:
+  - MJRefresh
+  - TSToolKit_Swift (from `https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  TSToolKit_Swift:
+    :git: https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git
+
+CHECKOUT OPTIONS:
+  TSToolKit_Swift:
+    :commit: caeca4da9fad868c2220a56fafadfb01d62df833
+    :git: https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git
+
+SPEC CHECKSUMS:
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  TSToolKit_Swift: 4f8605aaa825e634ba37e9b0b463337b61272e51
+
+PODFILE CHECKSUM: 1edfa82e240f54ac1e0c6814a8f02eba06947943
+
+COCOAPODS: 1.5.3
