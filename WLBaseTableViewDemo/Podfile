@@ -9,3 +9,8 @@ target 'WLBaseTableViewDemo' do
 
 end
 
+pre_install do |installer|
+
+Pod::PodTarget.send(:define_method, :static_framework?) { return true }
+
+end
