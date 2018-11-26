@@ -3,9 +3,9 @@ use_frameworks!
 
 target 'WLBaseTableViewDemo' do
     
-    pod 'TSToolKit_Swift',:git=>'https://github.com/StoneStoneStoneWang/TSToolKit_Swift.git'
+    pod 'TSToolKit_Swift'
     
-    pod 'MJRefresh',:modular_headers => true
-    
+    pod 'MJRefresh'
+
 end
 

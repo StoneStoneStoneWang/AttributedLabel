@@ -21,7 +21,7 @@ s.frameworks = 'UIKit', 'Foundation'
 
 s.static_framework = true
 
-spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
 s.source = { :git => "https://github.com/StoneStoneStoneWang/WLBaseTableView.git", :tag => "#{s.version}" }
 

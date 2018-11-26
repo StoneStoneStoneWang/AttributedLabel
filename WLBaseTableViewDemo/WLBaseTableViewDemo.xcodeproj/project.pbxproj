@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19473F8B7C0A41E11C02A8EF /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9EB54F3A24C9EF23DA27D4 /* Pods_WLBaseTableViewDemo.framework */; };
 		6C8AF95D21AAD74500FC4F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF95C21AAD74500FC4F7D /* AppDelegate.swift */; };
 		6C8AF95F21AAD74500FC4F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF95E21AAD74500FC4F7D /* ViewController.swift */; };
 		6C8AF96221AAD74500FC4F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF96021AAD74500FC4F7D /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		6C8AF99221AAD9FF00FC4F7D /* WLBaseTableBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */; };
 		6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */; };
 		A454155BC2F1574E70452705 /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2CAF9B2EB9C13C81AFFB02 /* Pods_WLBaseTableViewDemo.framework */; };
-		BD53C9B58529ED3F79A97130 /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2C28173AD663DCC809B856 /* Pods_WLBaseTableViewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +61,8 @@
 		6C8AF98F21AAD94F00FC4F7D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableBean.swift; sourceTree = "<group>"; };
 		6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseRefreshTableView.swift; sourceTree = "<group>"; };
+		6C8AF99721ABA3A700FC4F7D /* WLBaseTableViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLBaseTableViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E9EB54F3A24C9EF23DA27D4 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BAA097F1BE696B8ACA1743 /* Pods-WLBaseTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLBaseTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF2C28173AD663DCC809B856 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D571A9615E7B6B754E1D0068 /* Pods-WLBaseTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLBaseTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD53C9B58529ED3F79A97130 /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
 				A454155BC2F1574E70452705 /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
+				19473F8B7C0A41E11C02A8EF /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,7 @@
 				6C8AF98A21AAD7C200FC4F7D /* Code */,
 				6C8AF95C21AAD74500FC4F7D /* AppDelegate.swift */,
 				6C8AF95E21AAD74500FC4F7D /* ViewController.swift */,
+				6C8AF99721ABA3A700FC4F7D /* WLBaseTableViewDemo-Bridging-Header.h */,
 				6C8AF96021AAD74500FC4F7D /* Main.storyboard */,
 				6C8AF96321AAD74700FC4F7D /* Assets.xcassets */,
 				6C8AF96521AAD74700FC4F7D /* LaunchScreen.storyboard */,
@@ -165,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				CF2C28173AD663DCC809B856 /* Pods_WLBaseTableViewDemo.framework */,
+				1E2CAF9B2EB9C13C81AFFB02 /* Pods_WLBaseTableViewDemo.framework */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -172,7 +176,7 @@
 		765512925F26AF5F0D3B50ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E2CAF9B2EB9C13C81AFFB02 /* Pods_WLBaseTableViewDemo.framework */,
+				8E9EB54F3A24C9EF23DA27D4 /* Pods_WLBaseTableViewDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,7 +210,7 @@
 				6C8AF95521AAD74500FC4F7D /* Sources */,
 				6C8AF95621AAD74500FC4F7D /* Frameworks */,
 				6C8AF95721AAD74500FC4F7D /* Resources */,
-				80793DF6AE0659000833FE63 /* [CP] Embed Pods Frameworks */,
+				8765E374C3A7938ECDED8CAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,7 +351,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		80793DF6AE0659000833FE63 /* [CP] Embed Pods Frameworks */ = {
+		8765E374C3A7938ECDED8CAB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -569,6 +573,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JiuTouZhu.WLBaseTableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WLBaseTableViewDemo/WLBaseTableViewDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -589,6 +594,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JiuTouZhu.WLBaseTableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WLBaseTableViewDemo/WLBaseTableViewDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
