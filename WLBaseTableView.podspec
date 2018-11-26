@@ -3,10 +3,10 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLBaseTableView"
-s.version      = "1.1.1"
+s.version      = "1.1.2"
 s.summary      = "A Lib For tableview ."
 s.description  = <<-DESC
-A Lib For tableView.
+A Lib For tableView and collectionView.
 DESC
 
 s.homepage     = "https://github.com/StoneStoneStoneWang/WLBaseTableView"
@@ -19,7 +19,7 @@ s.swift_version = '4.2'
 
 s.frameworks = 'UIKit', 'Foundation'
 
-s.static_framework = true
+s.static_framework = false
 
 s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
