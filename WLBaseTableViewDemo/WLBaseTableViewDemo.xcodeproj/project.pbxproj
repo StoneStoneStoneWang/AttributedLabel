@@ -19,8 +19,8 @@
 		6C8AF99021AAD94F00FC4F7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF98F21AAD94F00FC4F7D /* Podfile */; };
 		6C8AF99221AAD9FF00FC4F7D /* WLBaseTableBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */; };
 		6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */; };
+		A454155BC2F1574E70452705 /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2CAF9B2EB9C13C81AFFB02 /* Pods_WLBaseTableViewDemo.framework */; };
 		BD53C9B58529ED3F79A97130 /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2C28173AD663DCC809B856 /* Pods_WLBaseTableViewDemo.framework */; };
-		BDBD01B33FEB39DF022869BD /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66265B5741FE05CD78F710AC /* Pods_WLBaseTableViewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E2CAF9B2EB9C13C81AFFB02 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66265B5741FE05CD78F710AC /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8AF95921AAD74500FC4F7D /* WLBaseTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLBaseTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8AF95C21AAD74500FC4F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +58,7 @@
 		6C8AF97E21AAD74700FC4F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C8AF98B21AAD8B700FC4F7D /* WLBaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableView.swift; sourceTree = "<group>"; };
 		6C8AF98D21AAD8D000FC4F7D /* WLBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableViewCell.swift; sourceTree = "<group>"; };
-		6C8AF98F21AAD94F00FC4F7D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		6C8AF98F21AAD94F00FC4F7D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableBean.swift; sourceTree = "<group>"; };
 		6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseRefreshTableView.swift; sourceTree = "<group>"; };
 		C6BAA097F1BE696B8ACA1743 /* Pods-WLBaseTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLBaseTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,8 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDBD01B33FEB39DF022869BD /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
 				BD53C9B58529ED3F79A97130 /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
+				A454155BC2F1574E70452705 /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +103,7 @@
 				6C8AF95A21AAD74500FC4F7D /* Products */,
 				92529A281D9A651F990DAE2E /* Pods */,
 				765512925F26AF5F0D3B50ED /* Frameworks */,
+				6C8AF99621AB8FDE00FC4F7D /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,10 +161,18 @@
 			path = ../../Code;
 			sourceTree = "<group>";
 		};
-		765512925F26AF5F0D3B50ED /* Frameworks */ = {
+		6C8AF99621AB8FDE00FC4F7D /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				CF2C28173AD663DCC809B856 /* Pods_WLBaseTableViewDemo.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		765512925F26AF5F0D3B50ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E2CAF9B2EB9C13C81AFFB02 /* Pods_WLBaseTableViewDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,7 +206,7 @@
 				6C8AF95521AAD74500FC4F7D /* Sources */,
 				6C8AF95621AAD74500FC4F7D /* Frameworks */,
 				6C8AF95721AAD74500FC4F7D /* Resources */,
-				BA43EE7C4BCC8B8C7F40ACA8 /* [CP] Embed Pods Frameworks */,
+				80793DF6AE0659000833FE63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,7 +347,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BA43EE7C4BCC8B8C7F40ACA8 /* [CP] Embed Pods Frameworks */ = {
+		80793DF6AE0659000833FE63 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -550,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 4QQ8T96P6H;
 				INFOPLIST_FILE = WLBaseTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,6 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 4QQ8T96P6H;
 				INFOPLIST_FILE = WLBaseTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
