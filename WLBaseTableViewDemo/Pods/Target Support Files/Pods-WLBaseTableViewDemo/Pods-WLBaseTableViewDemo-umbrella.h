@@ -10,7 +10,7 @@
 #endif
 #endif
 
-
+#import <MJRefresh/MJRefresh.h>
 FOUNDATION_EXPORT double Pods_WLBaseTableViewDemoVersionNumber;
 FOUNDATION_EXPORT const unsigned char Pods_WLBaseTableViewDemoVersionString[];
 
