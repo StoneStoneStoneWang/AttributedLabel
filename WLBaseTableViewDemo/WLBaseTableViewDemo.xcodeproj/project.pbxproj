@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181D65A6BA48E6B10E2B447B /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B72FCA45BD91904D3795573 /* Pods_WLBaseTableViewDemo.framework */; };
 		6C8AF95D21AAD74500FC4F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF95C21AAD74500FC4F7D /* AppDelegate.swift */; };
 		6C8AF95F21AAD74500FC4F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF95E21AAD74500FC4F7D /* ViewController.swift */; };
 		6C8AF96221AAD74500FC4F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF96021AAD74500FC4F7D /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		6C8AF99021AAD94F00FC4F7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF98F21AAD94F00FC4F7D /* Podfile */; };
 		6C8AF99221AAD9FF00FC4F7D /* WLBaseTableBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */; };
 		6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */; };
-		A4F370A8BF746EC2B4919BE2 /* libPods-WLBaseTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F54F45ED16996B28EA47619 /* libPods-WLBaseTableViewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,7 @@
 		6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseRefreshTableView.swift; sourceTree = "<group>"; };
 		6C8AF99721ABA3A700FC4F7D /* WLBaseTableViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLBaseTableViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E9EB54F3A24C9EF23DA27D4 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F54F45ED16996B28EA47619 /* libPods-WLBaseTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLBaseTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B72FCA45BD91904D3795573 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BAA097F1BE696B8ACA1743 /* Pods-WLBaseTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLBaseTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF2C28173AD663DCC809B856 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4F370A8BF746EC2B4919BE2 /* libPods-WLBaseTableViewDemo.a in Frameworks */,
+				181D65A6BA48E6B10E2B447B /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 		765512925F26AF5F0D3B50ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8F54F45ED16996B28EA47619 /* libPods-WLBaseTableViewDemo.a */,
+				9B72FCA45BD91904D3795573 /* Pods_WLBaseTableViewDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

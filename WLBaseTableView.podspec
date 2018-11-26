@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLBaseTableView"
-s.version      = "1.1.3"
+s.version      = "1.1.4"
 s.summary      = "A Lib For tableview ."
 s.description  = <<-DESC
 A Lib For tableView and collectionView.
@@ -19,7 +19,7 @@ s.swift_version = '4.2'
 
 s.frameworks = 'UIKit', 'Foundation'
 
-s.static_framework = false
+s.static_framework = true
 
 s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
@@ -30,6 +30,8 @@ s.source_files = "Code/**/*.{swift}"
 s.dependency 'TSToolKit_Swift'
 
 s.dependency 'MJRefresh'
+
+s.resources = 'MJRefresh/Resources/MJRefresh.bundle'
 
 end
 
