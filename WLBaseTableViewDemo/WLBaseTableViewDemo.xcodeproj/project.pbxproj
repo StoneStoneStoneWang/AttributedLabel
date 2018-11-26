@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181D65A6BA48E6B10E2B447B /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B72FCA45BD91904D3795573 /* Pods_WLBaseTableViewDemo.framework */; };
 		6C8AF95D21AAD74500FC4F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF95C21AAD74500FC4F7D /* AppDelegate.swift */; };
 		6C8AF95F21AAD74500FC4F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF95E21AAD74500FC4F7D /* ViewController.swift */; };
 		6C8AF96221AAD74500FC4F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF96021AAD74500FC4F7D /* Main.storyboard */; };
@@ -20,6 +19,7 @@
 		6C8AF99021AAD94F00FC4F7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF98F21AAD94F00FC4F7D /* Podfile */; };
 		6C8AF99221AAD9FF00FC4F7D /* WLBaseTableBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */; };
 		6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */; };
+		C5EA0FA8134B93F7498AD64A /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B72FCA45BD91904D3795573 /* Pods_WLBaseTableViewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181D65A6BA48E6B10E2B447B /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
+				C5EA0FA8134B93F7498AD64A /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
