@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLBaseTableView"
-s.version      = "1.0.8"
+s.version      = "1.1.0"
 s.summary      = "A Lib For tableview ."
 s.description  = <<-DESC
 A Lib For tableView.
