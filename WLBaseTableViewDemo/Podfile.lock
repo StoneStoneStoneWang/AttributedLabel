@@ -1,20 +1,16 @@
 PODS:
-  - MJRefresh (3.1.15.7)
   - TSToolKit_Swift (1.1.1)
 
 DEPENDENCIES:
-  - MJRefresh
   - TSToolKit_Swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - MJRefresh
     - TSToolKit_Swift
 
 SPEC CHECKSUMS:
-  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   TSToolKit_Swift: 4f8605aaa825e634ba37e9b0b463337b61272e51
 
-PODFILE CHECKSUM: 1764107c55e8cb6161b9e10377a4eef911d40a7c
+PODFILE CHECKSUM: e69d8cd2028e2e754f4ff576f1bb99e120328bb5
 
 COCOAPODS: 1.5.3

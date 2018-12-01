@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MJRefresh
+
 open class WLBaseTableView: UITableView {
     
     public static func baseTableView() -> Self {

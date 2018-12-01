@@ -210,7 +210,7 @@
 				6C8AF95521AAD74500FC4F7D /* Sources */,
 				6C8AF95621AAD74500FC4F7D /* Frameworks */,
 				6C8AF95721AAD74500FC4F7D /* Resources */,
-				CD38709B82CA9C5643AC82D8 /* [CP] Copy Pods Resources */,
+				AA1E91E3E894CD029EA13DA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,7 +351,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD38709B82CA9C5643AC82D8 /* [CP] Copy Pods Resources */ = {
+		AA1E91E3E894CD029EA13DA1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,18 +359,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${SRCROOT}/Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TSToolKit_Swift/TSToolKit_Swift.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSToolKit_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
