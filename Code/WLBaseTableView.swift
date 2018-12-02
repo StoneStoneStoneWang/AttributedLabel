@@ -40,7 +40,9 @@ extension WLBaseTableView {
     
     @objc open func commitInit() {
         
+        showsVerticalScrollIndicator = false
         
+        showsHorizontalScrollIndicator = false
     }
 }
 

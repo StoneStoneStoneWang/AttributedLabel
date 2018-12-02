@@ -12,14 +12,14 @@ open class WLBaseTableViewCell: UITableViewCell {
     
     var indexPath: IndexPath!
     
-    fileprivate final let iconImageView: UIImageView = UIImageView().then {
+    open var iconImageView: UIImageView = UIImageView().then {
         
         $0.contentMode = .scaleAspectFill
         
         $0.tag = 2001
     }
     
-    fileprivate final let titleLabel: UILabel = UILabel().then {
+    open var titleLabel: UILabel = UILabel().then {
         
         $0.tag = 2002
         
