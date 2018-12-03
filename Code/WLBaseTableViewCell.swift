@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import TSToolKit_Swift
+import WLToolsKit
 open class WLBaseTableViewCell: UITableViewCell {
     
     var indexPath: IndexPath!

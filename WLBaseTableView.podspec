@@ -6,7 +6,7 @@ s.name         = "WLBaseTableView"
 s.version      = "1.1.7"
 s.summary      = "A Lib For tableview ."
 s.description  = <<-DESC
-A Lib For tableView and collectionView.
+A Lib For tableView.
 DESC
 
 s.homepage     = "https://github.com/StoneStoneStoneWang/WLBaseTableView"
@@ -25,7 +25,7 @@ s.source = { :git => "https://github.com/StoneStoneStoneWang/WLBaseTableView.git
 
 s.source_files = "Code/**/*.{swift}"
 
-s.dependency 'TSToolKit_Swift'
+s.dependency 'WLToolsKit'
 
 end
 

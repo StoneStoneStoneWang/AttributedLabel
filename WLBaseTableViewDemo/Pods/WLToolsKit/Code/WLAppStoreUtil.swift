@@ -8,13 +8,11 @@
 
 import UIKit
 
-class WLAppStoreUtil: NSObject {
+open class WLAppStoreUtil: NSObject {
     // MARK: 单例模式
     public static var util: WLAppStoreUtil = WLAppStoreUtil()
     
-    private override init() {
-        
-    }
+    private override init() { }
     
     fileprivate var appId: String = ""
     

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double TSToolKit_SwiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char TSToolKit_SwiftVersionString[];
+FOUNDATION_EXPORT double WLToolsKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char WLToolsKitVersionString[];
 

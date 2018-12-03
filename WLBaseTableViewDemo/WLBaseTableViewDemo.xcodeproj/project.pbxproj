@@ -360,13 +360,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TSToolKit_Swift/TSToolKit_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/WLToolsKit/WLToolsKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TSToolKit_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WLToolsKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

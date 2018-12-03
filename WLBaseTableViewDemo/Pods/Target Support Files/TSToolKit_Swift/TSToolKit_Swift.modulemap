@@ -1,6 +1,0 @@
-framework module TSToolKit_Swift {
-  umbrella header "TSToolKit_Swift-umbrella.h"
-
-  export *
-  module * { export * }
-}

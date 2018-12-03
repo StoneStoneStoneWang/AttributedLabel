@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // MARK: colorTransformToImage
-extension UIImage {
+public extension UIImage {
     
     public static func colorTransformToImage(color: UIColor) -> UIImage {
         
@@ -67,3 +67,41 @@ extension UIImage {
         return img
     }
 }
+
+extension UIImage {
+    // 字符串转图片
+    public static func stringTransformToImg(_ string: String ,_ attribute: [NSAttributedString.Key : Any],_ size: CGSize) -> UIImage? {
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        
+        (string as NSString).draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height), withAttributes: attribute)
+        
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        return img
+    }
+    
+}
+// MARK: 截取图片的一部分
+extension UIImage {
+    
+    public static func wl_imageFromImage(_ image: UIImage ,inRect rect: CGRect) -> UIImage {
+        
+        let scale = UIScreen.main.scale
+        
+        let x = rect.origin.x * scale ,y = rect.origin.y * scale ,w = rect.width * scale ,h = rect.height * scale
+        
+        let dianRect = CGRect(x: x, y: y, width: w, height: h)
+        
+        let sourceImageRef: CGImage = image.cgImage!
+        
+        let newCGImage = sourceImageRef.cropping(to: dianRect)
+        
+        let newImage = UIImage(cgImage: newCGImage!, scale: scale, orientation: .up)
+        
+        return newImage
+    }
+}
+
