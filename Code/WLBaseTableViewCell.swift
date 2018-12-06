@@ -27,7 +27,7 @@ open class WLBaseTableViewCell: UITableViewCell {
         
         $0.textAlignment = .left
         
-        $0.textColor = WLHEXCOLOR(hexColor: "#3333333")
+        $0.textColor = WLHEXCOLOR(hexColor: "#333333")
     }
     
     fileprivate final let bottomLine: UIImageView = UIImageView().then {

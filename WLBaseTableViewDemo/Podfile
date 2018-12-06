@@ -7,5 +7,9 @@ target 'WLBaseTableViewDemo' do
     
     pod 'MJRefresh'
     
+    pod 'RxSwift'
+    
+    pod 'RxCocoa'
+    
 end
 

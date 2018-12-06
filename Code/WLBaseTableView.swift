@@ -7,8 +7,11 @@
 //
 
 import UIKit
-
+import RxSwift
+import RxCocoa
 open class WLBaseTableView: UITableView {
+    
+    public let disposeBag = DisposeBag()
     
     public static func baseTableView() -> Self {
         
@@ -43,6 +46,15 @@ extension WLBaseTableView {
         showsVerticalScrollIndicator = false
         
         showsHorizontalScrollIndicator = false
+        
+        rx.setDelegate(self).disposed(by: disposeBag)
     }
 }
 
+extension WLBaseTableView: UITableViewDelegate {
+    
+    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 48
+    }
+}
