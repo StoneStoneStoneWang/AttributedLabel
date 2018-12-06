@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "WLBaseTableView"
-s.version      = "1.1.9"
+s.version      = "1.2.0"
 s.summary      = "A Lib For tableview ."
 s.description  = <<-DESC
 A Lib For tableView.
@@ -19,13 +19,17 @@ s.swift_version = '4.2'
 
 s.frameworks = 'UIKit', 'Foundation'
 
-s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
-
 s.source = { :git => "https://github.com/StoneStoneStoneWang/WLBaseTableView.git", :tag => "#{s.version}" }
 
 s.source_files = "Code/**/*.{swift}"
 
+s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+
+s.static_framework = true
+
 s.dependency 'WLToolsKit'
+
+s.dependency 'MJRefresh'
 
 end
 

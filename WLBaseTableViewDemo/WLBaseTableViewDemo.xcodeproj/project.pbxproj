@@ -19,7 +19,7 @@
 		6C8AF99021AAD94F00FC4F7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF98F21AAD94F00FC4F7D /* Podfile */; };
 		6C8AF99221AAD9FF00FC4F7D /* WLBaseTableBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */; };
 		6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */; };
-		C5EA0FA8134B93F7498AD64A /* Pods_WLBaseTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B72FCA45BD91904D3795573 /* Pods_WLBaseTableViewDemo.framework */; };
+		CE953093628653B26BD51CD0 /* libPods-WLBaseTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DBC9B22B2DB574F81F4CCC /* libPods-WLBaseTableViewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09DBC9B22B2DB574F81F4CCC /* libPods-WLBaseTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLBaseTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19AB61464F077BE7A0BE1C37 /* Pods-WLBaseTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLBaseTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1E2CAF9B2EB9C13C81AFFB02 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66265B5741FE05CD78F710AC /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +64,6 @@
 		6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseRefreshTableView.swift; sourceTree = "<group>"; };
 		6C8AF99721ABA3A700FC4F7D /* WLBaseTableViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLBaseTableViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E9EB54F3A24C9EF23DA27D4 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B72FCA45BD91904D3795573 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BAA097F1BE696B8ACA1743 /* Pods-WLBaseTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLBaseTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF2C28173AD663DCC809B856 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5EA0FA8134B93F7498AD64A /* Pods_WLBaseTableViewDemo.framework in Frameworks */,
+				CE953093628653B26BD51CD0 /* libPods-WLBaseTableViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 		765512925F26AF5F0D3B50ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B72FCA45BD91904D3795573 /* Pods_WLBaseTableViewDemo.framework */,
+				09DBC9B22B2DB574F81F4CCC /* libPods-WLBaseTableViewDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 				6C8AF95521AAD74500FC4F7D /* Sources */,
 				6C8AF95621AAD74500FC4F7D /* Frameworks */,
 				6C8AF95721AAD74500FC4F7D /* Resources */,
-				AA1E91E3E894CD029EA13DA1 /* [CP] Embed Pods Frameworks */,
+				960DF99FFC5209C9AC19910C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,7 +351,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA1E91E3E894CD029EA13DA1 /* [CP] Embed Pods Frameworks */ = {
+		960DF99FFC5209C9AC19910C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,18 +359,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WLToolsKit/WLToolsKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WLToolsKit.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

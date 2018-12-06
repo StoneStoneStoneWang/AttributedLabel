@@ -1,4 +1,4 @@
-framework module WLToolsKit {
+module WLToolsKit {
   umbrella header "WLToolsKit-umbrella.h"
 
   export *

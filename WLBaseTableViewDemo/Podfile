@@ -1,7 +1,11 @@
 platform :ios, '9.0'
-use_frameworks!
+use_modular_headers!
+
 target 'WLBaseTableViewDemo' do
     
     pod 'WLToolsKit'
+    
+    pod 'MJRefresh'
+    
 end
 
