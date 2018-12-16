@@ -11,5 +11,7 @@ target 'WLBaseTableViewDemo' do
     
     pod 'RxCocoa'
     
+    pod 'RxDataSources'
+    
 end
 

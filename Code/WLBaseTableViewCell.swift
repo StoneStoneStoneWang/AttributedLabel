@@ -114,6 +114,8 @@ extension WLBaseTableViewCell {
         contentView.addSubview(bottomLine)
         
         lineType = .lightgray
+        
+        backgroundColor = .white
     }
 }
 extension WLBaseTableViewCell {
