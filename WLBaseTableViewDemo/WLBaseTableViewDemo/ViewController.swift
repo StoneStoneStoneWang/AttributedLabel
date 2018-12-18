@@ -10,58 +10,51 @@ import UIKit
 import RxCocoa
 import RxDataSources
 import RxSwift
+import MJRefresh
 
 class ViewController: UIViewController {
     
     var tableView:UITableView!
     
-    var dataSource:RxTableViewSectionedAnimatedDataSource<MySection>?
+//    var dataSource:RxTableViewSectionedAnimatedDataSource<MySection>?
     
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //创建表格视图
-        self.tableView = UITableView(frame: self.view.frame, style:.plain)
+        self.tableView = WLBaseRefreshTableView.baseTableView(frame: view.bounds)
         //创建一个重用的单元格
         self.tableView!.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
         self.view.addSubview(self.tableView!)
-        //初始化数据
         
-        //初始化数据
-        let sections = Observable.just([
-            MySection(header: "基本控件", items: [
-                "UILable的用法",
-                "UIText的用法",
-                "UIButton的用法"
-                ]),
-            MySection(header: "高级控件", items: [
-                "UITableView的用法",
-                "UICollectionViews的用法"
-                ])
-            ])
+        //初始化ViewModel
+        let viewModel = ViewModel(
+            input: (
+                headerRefresh: self.tableView.mj_header.rx.refreshing.asDriver(),
+                footerRefresh: self.tableView.mj_footer.rx.refreshing.asDriver()),
+            dependency: (
+                disposeBag: self.disposeBag,
+                networkService: NetworkService()))
         
-        //创建数据源
-        let dataSource = RxTableViewSectionedAnimatedDataSource<MySection>(
-            //设置单元格
-            configureCell: { ds, tv, ip, item in
-                let cell = tv.dequeueReusableCell(withIdentifier: "Cell")
-                    ?? UITableViewCell(style: .default, reuseIdentifier: "Cell")
-                cell.textLabel?.text = "\(ip.row)：\(item)"
-                
+        //单元格数据的绑定
+        viewModel.tableData.asDriver()
+            .drive(tableView.rx.items) { (tableView, row, element) in
+                let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+                cell.textLabel?.text = "\(row+1)、\(element)"
                 return cell
-        },
-            //设置分区头标题
-            titleForHeaderInSection: { ds, index in
-                return ds.sectionModels[index].header
-        }
-        )
+            }
+            .disposed(by: disposeBag)
         
-        self.dataSource = dataSource
+        //下拉刷新状态结束的绑定
+        viewModel.endHeaderRefreshing
+            .drive(self.tableView.mj_header.rx.endRefreshing)
+            .disposed(by: disposeBag)
         
-        //绑定单元格数据
-        sections
-            .bind(to: tableView.rx.items(dataSource: dataSource))
+        //上拉刷新状态结束的绑定
+        viewModel.endFooterRefreshing
+            .drive(self.tableView.mj_footer.rx.endRefreshing)
             .disposed(by: disposeBag)
         
         tableView.rx.setDelegate(self)
@@ -74,30 +67,71 @@ extension ViewController : UITableViewDelegate {
     //设置单元格高度
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath)
         -> CGFloat {
-            guard let _ = dataSource?[indexPath],
-                let _ = dataSource?[indexPath.section]
-                else {
-                    return 0.0
-            }
             
             return 60
     }
 }
-//自定义Section
-struct MySection {
-    var header: String
-    var items: [Item]
-}
 
-extension MySection : AnimatableSectionModelType {
-    typealias Item = String
+class ViewModel {
     
-    var identity: String {
-        return header
+    //表格数据序列
+    let tableData = BehaviorRelay<[String]>(value: [])
+    
+    //停止头部刷新状态
+    let endHeaderRefreshing: Driver<Bool>
+    
+    //停止尾部刷新状态
+    let endFooterRefreshing: Driver<Bool>
+    
+    //ViewModel初始化（根据输入实现对应的输出）
+    init(input: (
+        headerRefresh: Driver<Void>,
+        footerRefresh: Driver<Void> ),
+         dependency: (
+        disposeBag:DisposeBag,
+        networkService: NetworkService )) {
+        
+        //下拉结果序列
+        let headerRefreshData = input.headerRefresh
+            .startWith(()) //初始化时会先自动加载一次数据
+            .flatMapLatest{  //也可考虑使用flatMapFirst
+                return dependency.networkService.getRandomResult()
+        }
+        
+        //上拉结果序列
+        let footerRefreshData = input.footerRefresh
+            .flatMapLatest{  //也可考虑使用flatMapFirst
+                return dependency.networkService.getRandomResult()
+        }
+        
+        //生成停止头部刷新状态序列
+        self.endHeaderRefreshing = headerRefreshData.map{ _ in true }
+        
+        //生成停止尾部刷新状态序列
+        self.endFooterRefreshing = footerRefreshData.map{ _ in true }
+        
+        //下拉刷新时，直接将查询到的结果替换原数据
+        headerRefreshData.drive(onNext: { items in
+            self.tableData.accept(items)
+        }).disposed(by: dependency.disposeBag)
+        
+        //上拉加载时，将查询到的结果拼接到原数据底部
+        footerRefreshData.drive(onNext: { items in
+            self.tableData.accept(self.tableData.value + items )
+        }).disposed(by: dependency.disposeBag)
     }
+}
+class NetworkService {
     
-    init(original: MySection, items: [Item]) {
-        self = original
-        self.items = items
+    //获取随机数据
+    func getRandomResult() -> Driver<[String]> {
+        print("正在请求数据......")
+        let items = (0 ..< 15).map {_ in
+            "随机数据\(Int(arc4random()))"
+        }
+        let observable = Observable.just(items)
+        return observable
+            .delay(1, scheduler: MainScheduler.instance)
+            .asDriver(onErrorDriveWith: Driver.empty())
     }
 }

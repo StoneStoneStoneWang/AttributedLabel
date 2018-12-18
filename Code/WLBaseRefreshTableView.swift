@@ -8,6 +8,34 @@
 
 import UIKit
 import MJRefresh
+import RxCocoa
+import RxSwift
+
+public extension Reactive where Base: MJRefreshComponent {
+    
+    var refreshing: ControlEvent<Void> {
+        let source: Observable<Void> = Observable.create {
+            [weak control = self.base] observer  in
+            if let control = control {
+                control.refreshingBlock = {
+                    observer.on(.next(()))
+                }
+            }
+            return Disposables.create()
+        }
+        return ControlEvent(events: source)
+    }
+    
+    //停止刷新
+    var endRefreshing: Binder<Bool> {
+        return Binder(base) { refresh, isEnd in
+            if isEnd {
+                refresh.endRefreshing()
+            }
+        }
+    }
+}
+
 open class WLBaseRefreshTableView: WLBaseTableView {
     
     
@@ -16,65 +44,18 @@ open class WLBaseRefreshTableView: WLBaseTableView {
 extension WLBaseRefreshTableView {
     
     @objc open override func commitInit() {
+        super.commitInit()
         
+        let mj_header = MJRefreshNormalHeader()
         
+        self.mj_header = mj_header
+        
+        mj_header.lastUpdatedTimeLabel.isHidden = true
+        
+        //初始化数据
+        let mj_footer = MJRefreshBackNormalFooter()
+    
+        self.mj_footer = mj_footer
     }
 }
-extension WLBaseRefreshTableView {
-    
-    @objc open func setMJNormalHeader(_ refreshingBlock: @escaping () -> ()) {
-        
-        if let mj_header = mj_header {
-            
-            mj_header.refreshingBlock! = {
-                
-                refreshingBlock()
-            }
-        } else {
-            
-            mj_header = MJRefreshNormalHeader(refreshingBlock: {
-                
-                refreshingBlock()
-            })
-            
-            mj_header.setValue(true, forKey: "lastUpdatedTimeLabel.hidden")
-            
-            mj_header.setValue(true, forKey: "stateLabel.hidden")
-        }
-    }
-    
-    @objc open func mj_headerEndRefreshing(_ state: MJRefreshState) {
-        
-        mj_header.state = state
-        
-        mj_header.endRefreshing()
-    }
-    
-    @objc open func setMJNormalFooter(_ refreshingBlock: @escaping () -> ()) {
-        
-        if let mj_footer = mj_footer {
-            
-            mj_footer.refreshingBlock! = {
-                
-                refreshingBlock()
-            }
-        } else {
-            
-            mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
-                
-                refreshingBlock()
-            })
-            
-            mj_footer.setValue(true, forKey: "stateLabel.hidden")
-            
-            mj_footer.isHidden = true
-        }
-    }
-    
-    @objc open func mj_footerEndRefreshing(_ state: MJRefreshState) {
-        
-        mj_footer.state = state
-        
-        mj_footer.endRefreshing()
-    }
-}
+
