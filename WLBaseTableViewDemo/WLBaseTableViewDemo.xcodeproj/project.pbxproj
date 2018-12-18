@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C4C754221C6779D0026EE6F /* WLListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4C754121C6779D0026EE6F /* WLListViewDataSource.swift */; };
 		6C8AF95D21AAD74500FC4F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF95C21AAD74500FC4F7D /* AppDelegate.swift */; };
 		6C8AF95F21AAD74500FC4F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF95E21AAD74500FC4F7D /* ViewController.swift */; };
 		6C8AF96421AAD74700FC4F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF96321AAD74700FC4F7D /* Assets.xcassets */; };
@@ -17,7 +16,6 @@
 		6C8AF98C21AAD8B700FC4F7D /* WLBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF98B21AAD8B700FC4F7D /* WLBaseTableView.swift */; };
 		6C8AF98E21AAD8D000FC4F7D /* WLBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF98D21AAD8D000FC4F7D /* WLBaseTableViewCell.swift */; };
 		6C8AF99021AAD94F00FC4F7D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6C8AF98F21AAD94F00FC4F7D /* Podfile */; };
-		6C8AF99221AAD9FF00FC4F7D /* WLBaseTableBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */; };
 		6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */; };
 		CE953093628653B26BD51CD0 /* libPods-WLBaseTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DBC9B22B2DB574F81F4CCC /* libPods-WLBaseTableViewDemo.a */; };
 /* End PBXBuildFile section */
@@ -44,7 +42,6 @@
 		19AB61464F077BE7A0BE1C37 /* Pods-WLBaseTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLBaseTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLBaseTableViewDemo/Pods-WLBaseTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		1E2CAF9B2EB9C13C81AFFB02 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66265B5741FE05CD78F710AC /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C4C754121C6779D0026EE6F /* WLListViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLListViewDataSource.swift; sourceTree = "<group>"; };
 		6C8AF95921AAD74500FC4F7D /* WLBaseTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLBaseTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8AF95C21AAD74500FC4F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C8AF95E21AAD74500FC4F7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +57,6 @@
 		6C8AF98B21AAD8B700FC4F7D /* WLBaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableView.swift; sourceTree = "<group>"; };
 		6C8AF98D21AAD8D000FC4F7D /* WLBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableViewCell.swift; sourceTree = "<group>"; };
 		6C8AF98F21AAD94F00FC4F7D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseTableBean.swift; sourceTree = "<group>"; };
 		6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseRefreshTableView.swift; sourceTree = "<group>"; };
 		6C8AF99721ABA3A700FC4F7D /* WLBaseTableViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WLBaseTableViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E9EB54F3A24C9EF23DA27D4 /* Pods_WLBaseTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLBaseTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,9 +151,7 @@
 			children = (
 				6C8AF98B21AAD8B700FC4F7D /* WLBaseTableView.swift */,
 				6C8AF98D21AAD8D000FC4F7D /* WLBaseTableViewCell.swift */,
-				6C8AF99121AAD9FF00FC4F7D /* WLBaseTableBean.swift */,
 				6C8AF99321AAE34900FC4F7D /* WLBaseRefreshTableView.swift */,
-				6C4C754121C6779D0026EE6F /* WLListViewDataSource.swift */,
 			);
 			name = Code;
 			path = ../../Code;
@@ -381,9 +375,7 @@
 			files = (
 				6C8AF95F21AAD74500FC4F7D /* ViewController.swift in Sources */,
 				6C8AF98E21AAD8D000FC4F7D /* WLBaseTableViewCell.swift in Sources */,
-				6C4C754221C6779D0026EE6F /* WLListViewDataSource.swift in Sources */,
 				6C8AF95D21AAD74500FC4F7D /* AppDelegate.swift in Sources */,
-				6C8AF99221AAD9FF00FC4F7D /* WLBaseTableBean.swift in Sources */,
 				6C8AF98C21AAD8B700FC4F7D /* WLBaseTableView.swift in Sources */,
 				6C8AF99421AAE34900FC4F7D /* WLBaseRefreshTableView.swift in Sources */,
 			);

@@ -47,29 +47,7 @@ extension WLBaseTableView {
         
         showsHorizontalScrollIndicator = false
         
-        rx.setDelegate(self).disposed(by: disposeBag)
-        
         backgroundColor = .clear
     }
 }
 
-extension WLBaseTableView: UITableViewDelegate {
-    
-    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        return 48
-    }
-    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-    }
-    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        
-        return 0
-    }
-    
-    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        
-        return 0
-    }
-}

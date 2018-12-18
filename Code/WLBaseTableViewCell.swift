@@ -118,13 +118,7 @@ extension WLBaseTableViewCell {
         backgroundColor = .white
     }
 }
-extension WLBaseTableViewCell {
-    
-    @objc open func updateViewData(_ data: WLBaseTableBean) {
-        
-        
-    }
-}
+
 extension WLBaseTableViewCell {
     
     open override func layoutSubviews() {
